@@ -1,0 +1,24 @@
+<!-- Template to use for the Main page -->
+{% load static %}
+<style>
+body {
+	background-image: url({% static 'images/background.jpg' %});
+}
+</style>
+<body>
+<h1 style="color: #A1CCEB">
+	<link rel="stylesheet" href="{% static 'css/calculation.css' %}">
+	Welcome to Various Calculations Incorporated! (trademark pending)
+</h1>
+<p style="color: white">
+	Various mathematical calculations and their results can be found here. Click on the links below to explore!
+</p>
+<br>
+<div class="centered">
+    <a style="color: white" href="/calculation/fib">{{ "Fibonacci Sequence (C++)" }}</a>
+    <br>
+    <a style="color: white" href="/calculation/pi">{{ "Pi Approximation (Java)" }}</a>
+    <br>
+    <a style="color: white" href="/calculation/pythagorean">{{ "Pythagorean Theorem (Go)" }}</a>
+</div>
+</body>

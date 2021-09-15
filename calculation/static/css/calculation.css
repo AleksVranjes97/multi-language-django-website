@@ -1,0 +1,21 @@
+h1 {
+    text-align: center;
+}
+
+p {
+	text-align: center;
+	color: white;
+}
+
+span { 
+    display: block;
+    width: 100%;
+    overflow-wrap:break-word;
+    color: white;
+}
+
+.centered {
+	display: table;
+	margin: 0 auto;
+	color: white;
+} 

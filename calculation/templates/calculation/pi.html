@@ -1,0 +1,23 @@
+<!-- Template to use for the Pi Approximations page -->
+{% load static %}
+<style>
+body {
+	background-image: url({% static 'images/piBackground.jpg' %});
+}
+</style>
+<body>
+<h1 style="color: #A1CCEB">
+	<link rel="stylesheet" href="{% static 'css/calculation.css' %}">
+	Pi Approximations (with Java)
+</h1>
+
+<p style="color: white"> 
+	Pi is an irrational mathematical constant. By 2019, about <b>31 trillion</b> digits of pi had been found.<br><br>Here's an approximation of about <b>300</b> of its digits written in a Java program and passed to Django:
+</p>
+
+<span style="color: #CCD6DD"> <i>{{ pi_string.calculatePiApproximation }} </i></span>
+
+<p style="color: white"> 
+	Slightly more complex calculations here.
+</p>
+</body>

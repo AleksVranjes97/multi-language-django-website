@@ -1,0 +1,44 @@
+<!-- Template to use for the Pythagorean page -->
+{% load static %}
+<style>
+body {
+	background-image: url({% static 'images/background.jpg' %});
+}
+</style>
+<body>
+<h1 style="color: #A1CCEB">
+	<link rel="stylesheet" href="{% static 'css/calculation.css' %}">
+	Pythagorean Theorem (with Go)
+</h1>
+
+<p style="color: white"> 
+	The Pythagorean Theorem is another simple but cool mathematical equation:
+</p>
+<center>
+<img src="{% static 'images/Pythagorean.png' %}" alt="Pythagorean">
+</center>
+<p style="color: white">
+	There are four functions in a pre-compiled Go file in /calculation/scripts/ that a Foreign Function Interface accesses to print the hypotenuse of four different sized triangles:
+</p>
+
+<p style="color: white"> A relatively small triangle: </p>
+<center>
+<img src="{% static 'images/smallTriangle.png' %}" alt="Small Triangle">
+</center>
+<p style="color: #CCD6DD"> Hypotenuse = <i>{{ hypotenuse.smallHypotenuse }}</i></p>
+<p style="color: white"> A medium-sized triangle: </p>
+<center>
+<img src="{% static 'images/mediumTriangle.png' %}" alt="Medium Triangle">
+</center>
+<p style="color: #CCD6DD"> Hypotenuse = <i>{{ hypotenuse.mediumHypotenuse }}</i></p>
+<p style="color: white"> A pretty large triangle: </p>
+<center>
+<img src="{% static 'images/largeTriangle.png' %}" alt="Large Triangle">
+</center>
+<p style="color: #CCD6DD"> Hypotenuse = <i>{{ hypotenuse.largeHypotenuse }}</i></p>
+<p style="color: white"> A MASSIVE triangle: </p>
+<center>
+<img src="{% static 'images/extraLargeTriangle.png' %}" alt="Extra Large Triangle">
+</center>
+<p style="color: #CCD6DD"> Hypotenuse = <i>{{ hypotenuse.extraLargeHypotenuse }}</i></p>
+</body>
